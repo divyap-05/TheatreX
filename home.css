@@ -1,0 +1,134 @@
+body{
+   background-color: rgb(236, 221, 183); 
+}
+.head
+{
+    display: flex;
+    align-items: center;
+   gap:50px;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.icon
+{
+    height:50px;
+    width:50px;
+}
+.search
+{background-color:rgb(225, 207, 165) ;
+    height: 30px;
+    width:600px;
+    margin-right: 150px;
+    border:none;
+    
+}
+.search::placeholder{
+    color:rgb(61, 10, 10);
+    font-size: medium;
+}
+    
+.location
+{background-color: rgb(225, 207, 165);
+     height:30px;
+     width:140px;
+     margin-right:220px;
+     border:none;
+      color:rgb(61, 10, 10);
+      font-size: medium;
+}
+.getStarted
+{
+     height:40px;
+     width:160px;
+     border-radius: 15px;
+     border:none;
+     background-color: rgb(61, 10, 10);
+     color:rgb(225, 207, 165);
+     font-size: medium;
+     transition:0.2s;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    background-color: rgb(225, 207, 165);
+    margin-top: 15px;
+}
+
+
+.nav-right
+{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color:rgb(61, 10, 10);
+    font-size: medium;
+    transition:0.2s;
+}
+
+.navbar a:hover
+{
+    color:rgb(182, 12, 12);
+}
+.getStarted:hover{
+
+box-shadow: 5px 5px 5px rgb(0, 0, 0);
+transform:translateY(-5px);
+}
+.movie-section
+{
+    display: flex;
+    margin: 30px;
+}
+
+.filters
+{
+    width: 220px;
+    padding: 20px;
+    background-color: rgb(222, 202, 158);
+    color: rgb(61, 10, 10);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filters h2
+{
+    margin-top: 0;
+    color: rgb(61, 10, 10);
+}
+
+.filter-group
+{
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.filter-group summary
+{
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(61, 10, 10);
+}
+
+.filter-group label
+{
+    display: block;
+    margin: 10px 0;
+    color: rgb(75, 50, 35);
+    cursor: pointer;
+}
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"]
+{
+    accent-color: rgb(61, 10, 10);
+}
