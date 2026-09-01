@@ -56,6 +56,8 @@ body{
     padding: 12px 32px;
     background-color: rgb(225, 207, 165);
     margin-top: 15px;
+position:sticky;
+top:0;
 }
 
 
@@ -84,33 +86,41 @@ body{
 box-shadow: 5px 5px 5px rgb(0, 0, 0);
 transform:translateY(-5px);
 }
-.movie-section
+.page-section
 {
     display: flex;
+    align-items: flex-start;
     margin: 30px;
+    padding-top:10px;
 }
 .more
 {display:flex;
-    gap:880px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
 
 }
 .experience-card {
     width: 250px;
-    min-height: 350px;
+    min-height: 600px;
     background-color: rgb(225, 207, 165);
     border-radius: 15px;
     padding: 35px 25px;
     box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+gap:20px;
+    position: sticky;
+    top: 30px;
 }
 .leftimg
-{
+{object-fit:cover;
     width:200px;
-    height:100px;
+    height:150px;
     margin-bottom: 20px;
 }
 
@@ -142,6 +152,7 @@ transform:translateY(-5px);
 .movie-container
 {
     display: flex;
+    margin-bottom:30px;
     gap: 35px;
     flex-wrap: wrap;
 }
