@@ -10,14 +10,14 @@
   
    <div class="head">
     <img class="icon" src="images/icon1.jpeg" alt="icon">
-    <input class="search" placeholder="search">
+    <input class="search" placeholder="Search">
     <select name="location" class="location">
-      <option>Select city</option>
-    <option>Mumbai</option>
-<option>Thane</option>
-<option>Pune</option>
+        <option>Select city</option>
+        <option>Mumbai</option>
+        <option>Thane</option>
+        <option>Pune</option>
 
-</select>
+    </select>
 <button class="getStarted">Get started </button>
   </div>
 
@@ -26,11 +26,11 @@
 
 <nav class="navbar">
     <div class="nav-right">
-        <a href="#">Movies</a>
-        <a href="#">Events</a>
-        <a href="#">Plays</a>
-        <a href="#">Sports</a>
-        <a href="#">Activities</a>
+        <a href="home.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="#eventContainer">Events</a>
+        <a href="plays.html">Plays</a>
+       
 </div>
  <div class="nav-right">
         <a href="#">Offers</a>
@@ -44,7 +44,7 @@
 <section class="page-section">
 
 <div class="experience-card">
-    <img class="leftimg" src="images/leftside_homepage.jpeg">
+    <img class="leftimg" src="images/leftside_homepage.jpeg" alt="TheatreX entertainment">
     
     <h2>Ready to experience more?</h2>
     <p>Discover movies, events and entertainment with <b>TheatreX</b></p>
@@ -54,7 +54,7 @@
 <div class="movies" id="movies">
 <div class="more">
     <h2 class="section-title">Now Showing</h2>
-    <h2 class="seeAll">See all ></h2>
+    <a href="movies.html" class="seeAll">See all ></a>
 </div>  
     <div class="movie-container" id="movieContainer">
     </div>
@@ -69,9 +69,21 @@
 
     <div class="movie-container" id="eventContainer">
     </div>
+<div class="plays">
+    <div class="more">
+        <h2 class="section-title">Latest Plays</h2>
 
+        <a href="plays.html" class="seeAll">
+            See all >
+        </a>
+    </div>
+
+    <div id="playContainer" class="movie-container"></div>
 </div>
 </div>
+
+
+
 </section>
 <script src="home.js"></script>
 </body>
