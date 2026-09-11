@@ -202,9 +202,17 @@ else if (currentPage.includes("home.html"))
 else if (currentPage.includes("plays.html")) {
     document.querySelector('a[href="plays.html"]').classList.add("active");
 }
+else if (currentPage.includes("events.html")) {
+    document.querySelector('a[href="events.html"]').classList.add("active");
+}
+
 
 
 // ==================== ALL PLAYS PAGE ====================
 const allPlayContainer = document.getElementById("allPlayContainer");
 if (allPlayContainer) renderPlays(allPlayContainer, plays);
+
+// ==================== ALL EVENTS PAGE ====================
+const allEventContainer = document.getElementById("allEventContainer");
+if (allEventContainer) renderPlays(allEventContainer, events);
 

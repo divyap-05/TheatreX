@@ -115,6 +115,8 @@ transform:translateY(-5px);
     align-items: center;
     text-align: center;
 gap:20px;
+position:sticky;
+top:50px;
     
 }
 .leftimg
@@ -246,11 +248,12 @@ gap:20px;
     padding:30px;
    gap : 60px;
 }
-#allPlayContainer
+#allPlayContainer,#allEventContainer
 {
     padding:30px;
     gap:60px;
 }
+
 @media (max-width: 900px) {
     .head {
         gap: 15px;
