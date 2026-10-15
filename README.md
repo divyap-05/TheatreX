@@ -92,6 +92,74 @@ The project uses a simple **client-side, multi-page architecture**:
 
 There is **no backend API or database** in this version. The browser is responsible for storing the demo account, session and booking data.
 
+## Screenshots
+
+This section showcases the main pages and booking workflow of TheatreX, including its home page, authentication interface, content browsing pages, movie details, booking process, and printable booking summary.
+
+### 1. Home Page
+
+The home page serves as the main entry point to TheatreX, providing navigation to the website's main sections and access to the available movie, play, and event listings.
+
+![TheatreX Home Page](screenshots/home.png)
+
+### 2. Login Page
+
+The login page provides the user interface for account access within the TheatreX application.
+
+![TheatreX Login Page](screenshots/login.png)
+
+### 3. Movies Page
+
+The movies page displays the available movie listings, allowing users to explore titles and proceed to the corresponding movie details page.
+
+![TheatreX Movies Page](screenshots/movies.png)
+
+### 4. Plays Page
+
+The plays page presents the theatrical performances listed on TheatreX, giving users a dedicated section to browse available plays.
+
+![TheatreX Plays Page](screenshots/plays.png)
+
+### 5. Events Page
+
+The events page provides a dedicated interface for exploring the events listed on the website.
+
+![TheatreX Events Page](screenshots/events.png)
+
+### 6. Movie Details Page
+
+The movie details page presents information about a selected movie and provides access to the movie booking process.
+
+![TheatreX Movie Details Page](screenshots/movie-details.png)
+
+### 7. Movie Booking Flow
+
+The following screenshots demonstrate the booking workflow for one selected movie.
+
+#### 7.1. Booking Interface
+
+This screen shows the initial stage of the selected movie's booking process.
+
+![Movie Booking Interface](screenshots/booking-step-1.png)
+
+#### 7.2. Seat Selection
+
+This screen demonstrates the seating selection interface, where users can view the available seating arrangement and make their selections.
+
+![Movie Seat Selection](screenshots/booking-step-2.png)
+
+#### 7.3. Booking Review
+
+This screen shows the subsequent booking stage, allowing users to review the information presented before proceeding.
+
+![Movie Booking Review](screenshots/booking-step-3.png)
+
+### 8. Bill and Print Page
+
+The bill page displays the booking summary in a printable format. Users can review the displayed details and use the browser's print functionality to print the page or save it as a PDF.
+
+![TheatreX Bill and Print Page](screenshots/bill.png)
+
 ## How to Run the Project
 
 ### Option 1: Open the HTML file
@@ -149,4 +217,4 @@ Possible extensions include a backend API and database, secure server-side authe
 
 ## Academic Use and Acknowledgement
 
-TheatreX was developed as a group mini-project. This repository is maintained by me, and I contributed the majority of the implementation and integration while acknowledging the work of my teammates. Repository commit history reflects commits made in this repository and should not be treated as a complete record of every person's contribution to the original group work.
+TheatreX was developed as a group mini-project. This repository is maintained by me.
