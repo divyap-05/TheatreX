@@ -160,6 +160,55 @@ The bill page displays the booking summary in a printable format. Users can revi
 
 ![TheatreX Bill and Print Page](images/bill.png)
 
+## Core Functionalities and Implementation
+
+### 1. User Authentication and Password Handling
+- Implements account creation and login using JavaScript.
+- Manages user session state and account-related information through browser `localStorage`.
+- Connects authentication with the booking workflow so users can sign in before proceeding when required.
+
+### 2. Persistent Data Storage
+- Uses browser `localStorage` to retain account, session and booking information.
+- Uses `JSON.stringify()` and `JSON.parse()` to store and retrieve structured JavaScript data.
+- Maintains booking information across page navigation and browser refreshes.
+
+### 3. Dynamic Catalogue Rendering
+- Uses JavaScript to display movie, play and event listings.
+- Supports search and filtering through the available catalogue controls.
+- Connects selected catalogue items to their corresponding details pages.
+
+### 4. Location, Venue and Show Selection
+- Provides location-based venue selection.
+- Updates the available venue options according to the selected location.
+- Allows users to choose show dates, timings and the relevant screen or seating area.
+
+### 5. Interactive Seat Selection
+- Displays a seating arrangement with selectable seats.
+- Tracks the seats selected by the user.
+- Uses stored booking information to determine seat availability for the selected show and booking configuration.
+- Updates the booking information when the user changes their selections.
+
+### 6. Dynamic Pricing and Booking Summary
+- Calculates the ticket subtotal based on the selected seats and applicable seat prices.
+- Includes the applicable convenience fee in the total calculation.
+- Displays the selected entertainment item, venue, show details, seats and total cost for review.
+
+### 7. Payment Processing Simulation
+- Provides demo payment methods as part of the booking workflow.
+- Records the selected demo payment method with the booking information.
+- Completes the simulated payment and booking confirmation flow without processing a real financial transaction.
+
+### 8. Booking Confirmation and Bill Generation
+- Generates a booking reference for the confirmed booking.
+- Saves the booking details in browser storage.
+- Displays the confirmed booking information on the bill page.
+- Supports printing the booking summary or saving it as a PDF through the browser's print functionality.
+
+### 9. Interactive User Interface
+- Uses HTML for page structure, CSS for presentation and JavaScript for interactive behaviour.
+- Uses DOM manipulation and event listeners to respond to user actions.
+- Maintains a consistent interface across catalogue, authentication and booking pages.
+
 ## How to Run the Project
 
 ### Option 1: Open the HTML file
