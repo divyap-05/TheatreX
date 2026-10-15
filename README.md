@@ -1,4 +1,4 @@
-# TheatreX — Movie, Event and Theatre Booking Website
+# TheatreX — Movie, Event and Play Booking Website
 
 ## Project Overview
 
