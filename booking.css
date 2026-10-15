@@ -1,0 +1,29 @@
+.booking-wrap{max-width:1000px;margin:35px auto;padding:25px;background:rgb(225, 207, 165);border-radius:14px;color:#222;box-shadow:0 5px 24px #0001;border:#3d0b0b solid;}
+.booking-wrap h1{margin-top:0}.booking-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.booking-grid label,#reviewPanel label{display:flex;flex-direction:column;gap:7px;font-weight:600}
+.booking-grid select,.booking-grid input,#paymentMethod{padding:11px;border:1px solid #bbb;border-radius:7px;background-color: rgb(225, 207, 165);font:inherit;border:#3d0b0b solid;}
+.screen{margin:30px auto 20px;max-width:520px;text-align:center;padding:10px;background:rgb(30, 21, 0);color:rgb(225, 207, 165);border-radius:0 0 50% 50%;font-weight:bold;letter-spacing:3px;border:#3d0b0b solid;}
+.seat-legend{display:flex;justify-content:center;gap:24px;margin:15px}
+.seat-legend span{font-size:13px}
+.seat-legend span:before{content:"";display:inline-block;width:12px;height:12px;margin-right:7px;border-radius:3px;background:white;}
+.seat-legend span:nth-child(2):before{background:#4b9c75}.seat-legend span:nth-child(3):before{background:#888888}
+.seats{display:grid;grid-template-columns:repeat(8,minmax(28px,48px));gap:9px;justify-content:center;margin:20px auto}
+.seat{border:1px solid #4b9c75;background:#e3f3eb;color:#174e35;border-radius:6px;padding:9px 2px;cursor:pointer}
+.seat.selected{background:#4b9c75;color:white}.seat.booked{background:#888;color:white;border-color:#888;cursor:not-allowed}
+.booking-summary{margin:18px 0;padding:15px;background:rgb(225, 207, 165);border-radius:8px;border:#3d0b0b solid;}
+.booking-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px}
+
+.booking-actions .secondary{background:#777}
+.booking-wrap a{color:#29233f}
+.demo-note{color:#8a4c00}
+.bill-card{border:1px dashed #777;padding:24px;max-width:650px;margin:20px auto}
+.bill-card h2{text-align:center}
+.bill-card p{line-height:1.6}
+#notice{color:#a33131;font-weight:600;min-height:1.2em}
+@media print{.navbar,.auth-logo,.booking-actions,#printBtn,.booking-wrap>a{display:none!important}
+.booking-wrap{box-shadow:none;margin:0;max-width:none}.bill-card{border:1px solid #999}}
+.printback
+{
+    display:flex;
+    gap:20px;
+}

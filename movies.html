@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheatreX - All Movies</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="all-movies-page">
+     <div class="head">
+    <img class="icon" src="images/icon1.jpeg" alt="icon">
+    <input class="search" placeholder="Search">
+    <select name="location" class="location">
+        <option>Select city</option>
+        <option>Mumbai</option>
+        <option>Thane</option>
+        <option>Pune</option>
+
+    </select>
+<button class="getStarted">Get started </button>
+  </div>
+
+
+
+
+<nav class="navbar">
+    <div class="nav-right">
+        <a href="home.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="events.html">Events</a>
+        <a href="plays.html">Plays</a>
+       
+</div>
+ <div class="nav-right">
+        <a href="contact-us.html">Contact Us</a>
+        <a href="about-us.html">About Us</a>
+    </div>
+</nav>
+
+
+
+
+
+    <header class="movies-header">
+        <div>
+            <h1>All Movies</h1>
+            <p>Explore movies available on TheatreX</p>
+        </div>
+     
+    </header>
+    <div class="filter-bar" id="playFilterBar">
+        <select id="movieGenreFilter" class="filter-select">
+            <option value="">All Genres</option>
+        </select>
+        <select id="movieLanguageFilter" class="filter-select">
+            <option value="">All languages</option>
+        </select>
+        <button id="movieResetFilter" class="filter-reset" type="button">Reset filters</button>
+    </div>
+
+    <main>
+        <div id="allMovieContainer" class="movie-container all-movies-container"></div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

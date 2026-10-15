@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Tickets | TheatreX</title>
+<link rel="stylesheet" href="home.css"><link rel="stylesheet" href="booking.css">
+</head>
+<body>
+<a href="home.html" class="auth-logo"><img src="images/icon1.jpeg" alt="TheatreX"><span>TheatreX</span></a>
+<nav class="navbar"><div class="nav-right"><a href="home.html">Home</a><a href="movies.html">Movies</a><a href="events.html">Events</a><a href="plays.html">Plays</a></div></nav>
+<main class="booking-wrap">
+<h1>Book your tickets</h1><p id="welcome"></p><p id="notice" role="status"></p>
+<section id="bookingPanel">
+<div class="booking-grid">
+<label>Location<select id="location"><option value="">Choose location</option><option>Pune</option><option>Thane</option><option>Mumbai</option></select></label>
+<label>Venue<select id="venue"><option value="">Choose venue</option></select></label>
+<label>Date<input id="showDate" type="date"></label>
+<label>Show time<select id="showTime"><option value="">Choose show time</option><option>10:00 AM</option><option>1:30 PM</option><option>5:00 PM</option><option>8:30 PM</option></select></label>
+<label>Screen / seating area<select id="area"><option value="">Choose screen / area</option></select></label>
+</div>
+<div class="screen">SCREEN / STAGE</div>
+<div class="seat-legend"><span>Available</span><span>Selected</span><span>Booked</span></div>
+<div id="seats" class="seats"></div>
+<div class="booking-summary" id="summary"></div>
+<div class="booking-actions"><button id="continueBtn">Review booking</button><a href="home.html"><button id="continueBtn">Cancel</button></a></div>
+</section>
+<section id="reviewPanel" hidden><h2>Review your booking</h2><div id="reviewSummary"></div>
+<label>Demo payment method<select id="paymentMethod"><option value="">Choose payment method</option><option>UPI</option><option>Debit/Credit Card</option><option>Net Banking</option></select></label>
+<p class="demo-note">Demo payment only. Do not enter real banking details.</p>
+<div class="booking-actions"><button id="backBtn">Back to seats</button><button id="payBtn">Confirm payment</button><button id="cancelPayBtn" class="secondary">Cancel payment</button></div></section>
+<section id="billPanel" hidden><div id="bill"></div>
+    <div class="printback"><button id="printBtn">Print Ticket / Bill</button>
+   <a href="home.html"><button id="printBtn">Back to TheatreX</button></a>
+    </div>
+</section>
+</main>
+<script src="auth.js"></script><script src="home.js"></script><script src="booking.js"></script>
+</body></html>

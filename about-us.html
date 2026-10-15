@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TheatreX - About Us</title>
+        <link rel="stylesheet" href="home.css"><link rel="stylesheet" href="support.css">
+    </head>
+    <body>
+        <div class="head">
+            <img class="icon" src="images/icon1.jpeg" alt="TheatreX logo">
+            <input class="search" placeholder="Search" aria-label="Search"><select name="location" class="location" aria-label="Select city">
+                <option>Select city</option><option>Mumbai</option><option>Thane</option><option>Pune</option></select>
+                <button class="getStarted" type="button" onclick="location.href='login.html'">Get started</button></div>
+                <nav class="navbar"><div class="nav-right"><a href="home.html">Home</a><a href="movies.html">Movies</a>
+                    <a href="events.html">Events</a><a href="plays.html">Plays</a></div>
+                    <div class="nav-right"><a href="contact-us.html">Contact Us</a>
+                        <a href="about-us.html">About Us</a>
+                    </div></nav>
+                    <main class="about-wrap">
+                        <section class="about-hero">
+                            <p class="eyebrow">YOUR ENTERTAINMENT, ONE PLACE</p>
+                            <h1>About TheatreX</h1><p>From the big screen to live stages, TheatreX helps you discover and book experiences worth looking forward to.</p>
+                            <button class="about-cta" id="aboutGetStarted" type="button">Get Started <span aria-hidden="true">→</span></button></section>
+                            <section class="about-intro"><h2>Entertainment made simpler</h2><p>TheatreX brings movies, live events and theatre plays together in one convenient place. Browse what’s happening, explore details and move towards booking with a simple experience.</p></section><section class="feature-grid"><article class="feature-card"><span class="feature-icon">🎬</span><h3>Movies for every mood</h3><p>Explore currently showing movies and discover titles, genres and show information in one place.</p></article><article class="feature-card"><span class="feature-icon">🎟️</span><h3>Live events</h3><p>Find music shows, comedy, festivals and other experiences to enjoy with friends and family.</p></article><article class="feature-card"><span class="feature-icon">🎭</span><h3>Theatre and plays</h3><p>Discover stage performances and browse play details before planning your visit.</p></article><article class="feature-card"><span class="feature-icon">🔎</span><h3>Easy discovery</h3><p>Browse dedicated sections and use the available search and city options to find experiences.</p></article><article class="feature-card"><span class="feature-icon">👤</span><h3>Your account</h3><p>Sign in to access the account features available on TheatreX and continue your booking journey.</p></article><article class="feature-card"><span class="feature-icon">💬</span><h3>Customer support</h3><p>Visit Contact Us for helpline details, email support and answers to common booking questions.</p></article></section><section class="about-bottom"><h2>Ready for your next experience?</h2><p>Explore what’s on and find something you’ll love.</p><button class="about-cta" id="exploreNow" type="button">Explore Movies & Events <span aria-hidden="true">→</span></button></section></main><script src="auth.js"></script><script>function continueToExplore(){window.location.href=(typeof getCurrentUser==='function' && getCurrentUser())?'movies.html':'login.html';}document.getElementById('aboutGetStarted').addEventListener('click',continueToExplore);document.getElementById('exploreNow').addEventListener('click',continueToExplore);</script></body></html>

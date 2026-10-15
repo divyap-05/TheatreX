@@ -1,0 +1,587 @@
+body{
+   background-color: rgb(236, 221, 183); 
+}
+.head
+{
+    display: flex;
+    align-items: center;
+   gap:50px;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.icon
+{
+    height:50px;
+    width:50px;
+}
+.search
+{background-color:rgb(225, 207, 165) ;
+    height: 30px;
+    width:600px;
+    margin-right: 150px;
+    border:none;
+    
+}
+.search::placeholder{
+    color:rgb(61, 10, 10);
+    font-size: medium;
+}
+    
+.location
+{background-color: rgb(225, 207, 165);
+     height:30px;
+     width:140px;
+     margin-right:220px;
+     border:none;
+      color:rgb(61, 10, 10);
+      font-size: medium;
+}
+.getStarted{
+     height:40px;
+     width:160px;
+     border-radius: 15px;
+     border:none;
+     background-color: rgb(61, 10, 10);
+     color:rgb(225, 207, 165);
+     font-size: medium;
+     transition:0.2s;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+    background-color: rgb(225, 207, 165);
+    margin-top: 15px;
+position:sticky;
+top:0;
+}
+
+
+.nav-right
+{
+    display:flex;
+    align-items:center;
+    gap:100px;
+    font-weight: bold;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color:rgb(61, 10, 10);
+    font-size:18px;
+    transition:0.2s;
+}
+
+.navbar a:hover,.seeAll:hover
+{
+    color:rgb(182, 12, 12);
+    cursor: pointer;
+}
+.getStarted:hover{
+
+box-shadow: 5px 5px 5px rgb(0, 0, 0);
+transform:translateY(-5px);
+}
+.page-section
+{
+    display: flex;
+    align-items: flex-start;
+    margin: 30px;
+    padding-top:10px;
+}
+.more
+{display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+
+}
+.experience-card {
+    width: 250px;
+    min-height: 600px;
+    background-color: rgb(225, 207, 165);
+    border-radius: 15px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+gap:20px;
+position:sticky;
+top:50px;
+    
+}
+.leftimg
+{object-fit:cover;
+    width:200px;
+    height:150px;
+    margin-bottom: 20px;
+}
+
+.experience-card h2 {
+    font-size: 26px;
+    margin: 0 0 18px 0;
+    line-height: 1.2;
+}
+
+.experience-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+
+.movies
+{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.section-title,.seeAll
+{
+    color: rgb(61, 10, 10);
+    margin-top: 0;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.seeAll
+{
+    font-size: 22px;;
+}
+.movie-container
+{
+    display: flex;
+    margin-bottom:30px;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.movie-card
+{
+    width: 190px;
+    
+   
+    background-color: rgb(225, 207, 165);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+    box-sizing:border-box;
+}
+
+.movie-card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.movie-card img
+{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-info
+{
+    padding: 12px;
+}
+
+.movie-info h3
+{
+    margin: 0 0 6px;
+    color: rgb(61, 10, 10);
+}
+
+.movie-info p
+{
+    margin: 0;
+    color: rgb(75, 50, 35);
+    font-size: 14px;
+}
+/* ==================== EVENTS ==================== */
+
+/* ==================== ALL MOVIES PAGE ==================== */
+.all-movies-page {
+    min-height: 100vh;
+  
+    box-sizing: border-box;
+}
+
+.movies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    background-color: rgb(225, 207, 165);
+    border-radius: 15px;
+    margin-top:20px;
+}
+
+.movies-header h1 {
+    margin: 0 0 6px;
+    color: rgb(61, 10, 10);
+}
+
+.movies-header p {
+    margin: 0;
+    color: rgb(75, 50, 35);
+}
+
+
+
+
+.all-movies-container {
+    padding:30px;
+   gap : 60px;
+}
+#allPlayContainer,#allEventContainer
+{
+    padding:30px;
+    gap:60px;
+}
+
+@media (max-width: 900px) {
+    .head {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: min(600px, 70vw);
+        margin-right: 0;
+    }
+
+    .location {
+        margin-right: 0;
+    }
+
+    .nav-right {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .experience-card {
+        display: none;
+    }
+
+    .movies {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-section,
+    .all-movies-page {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .movies-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .movie-card {
+        width: calc(50% - 10px);
+    }
+
+    .movie-card img {
+        height: 240px;
+    }
+}
+nav a.active{
+    color:rgb(225, 207, 165);
+    font-weight:bold;
+    border-bottom:2px solid rgb(61, 10, 10);
+    background-color: rgb(61, 10, 10) ;
+    padding:5px 10px;
+    border-radius: 6px;
+}
+
+/* ==================== FILTER BAR (Events / Plays) ==================== */
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 30px 20px;
+}
+
+.filter-select {
+    background-color: rgb(225, 207, 165);
+    border: none;
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: rgb(61, 10, 10);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-reset {
+    background: none;
+    border: 1px solid rgb(61, 10, 10);
+    color: rgb(61, 10, 10);
+    border-radius: 8px;
+    height: 38px;
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.filter-reset:hover {
+    background-color: rgb(61, 10, 10);
+    color: rgb(225, 207, 165);
+}
+
+.no-results {
+    padding: 30px;
+    color: rgb(75, 50, 35);
+    font-size: 16px;
+}
+
+/* ==================== ACCOUNT DROPDOWN (header) ==================== */
+.account-menu {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: rgb(225, 207, 165);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    min-width: 190px;
+    z-index: 50;
+}
+
+.account-name {
+    margin: 0 0 2px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(61, 10, 10);
+}
+
+.account-email {
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: rgb(75, 50, 35);
+    word-break: break-all;
+}
+
+.account-logout {
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(61, 10, 10);
+    color: rgb(225, 207, 165);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .filter-bar {
+        margin: 0 15px 20px;
+    }
+}
+/* ==================== MOVIE DETAILS PAGE ==================== */
+
+.movie-details-page {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1400px;
+    box-sizing: border-box;
+}
+
+.movie-detail-card {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(225, 207, 165);
+    border-radius: 18px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Movie poster */
+.movie-detail-image {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.movie-detail-image img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Movie information */
+.movie-detail-info {
+    flex: 1;
+    padding: 10px 0;
+}
+
+.movie-detail-info h1 {
+    color: rgb(61, 10, 10);
+    font-size: 50px;
+    margin: 0 0 15px;
+}
+
+.movie-meta {
+    color: rgb(75, 50, 35);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.movie-detail-info h3 {
+    color: rgb(61, 10, 10);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.movie-detail-info > p {
+    color: rgb(75, 50, 35);
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Cast and director */
+.movie-extra-details {
+    margin-top: 25px;
+}
+
+.movie-extra-details p {
+    color: rgb(75, 50, 35);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.movie-extra-details strong {
+    color: rgb(61, 10, 10);
+}
+
+/* Book Now button */
+#bookMovieBtn,
+#bookPlayBtn ,#bookEventBtn,#continueBtn,#backBtn,#payBtn,#cancelPayBtn,#printBtn{
+    margin-top: 25px;
+    height: 45px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(61, 10, 10);
+    color: rgb(225, 207, 165);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#bookMovieBtn:hover,
+#bookPlayBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Movie not found */
+#movieDetails > h2 {
+    color: rgb(61, 10, 10);
+}
+
+#movieDetails > p {
+    color: rgb(75, 50, 35);
+}
+
+#movieDetails > a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: rgb(61, 10, 10);
+    color: rgb(225, 207, 165);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* ==================== MOVIE DETAILS RESPONSIVE ==================== */
+
+@media (max-width: 800px) {
+
+    .movie-detail-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-detail-image {
+        width: 400px;
+    }
+
+    .movie-detail-image img {
+        height: 500px;
+    }
+
+    .movie-detail-info {
+        width: 100%;
+    }
+
+    .movie-detail-info h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .movie-details-page {
+        margin: 20px 15px;
+        padding: 0;
+    }
+
+    .movie-detail-card {
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .movie-detail-image {
+        width: 220px;
+    }
+
+    .movie-detail-image img {
+        height: 330px;
+    }
+
+    .movie-detail-info h1 {
+        font-size: 26px;
+    }
+}
+
+.auth-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: rgb(61, 10, 10);
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.auth-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}

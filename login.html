@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheatreX - Login</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-topbar">
+        <a href="home.html" class="auth-logo">
+            <img src="images/icon1.jpeg" alt="TheatreX">
+            <span>TheatreX</span>
+        </a>
+    </div>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+
+            <div class="auth-tabs">
+                <button type="button" class="auth-tab active" id="tabSignIn">Sign In</button>
+                <button type="button" class="auth-tab" id="tabSignUp">Create Account</button>
+            </div>
+
+            <!-- SIGN IN -->
+            <form id="signInForm" class="auth-form active" novalidate>
+                <h2>Welcome back</h2>
+                <p class="auth-sub">Sign in to continue to TheatreX</p>
+
+                <label for="signInEmail">Email</label>
+                <input type="email" id="signInEmail" placeholder="you@example.com" autocomplete="email">
+                <span class="error-msg" id="signInEmailError"></span>
+
+                <label for="signInPassword">Password</label>
+                <input type="password" id="signInPassword" placeholder="Enter your password" autocomplete="current-password">
+                <span class="error-msg" id="signInPasswordError"></span>
+
+                <p class="form-error" id="signInFormError"></p>
+
+                <button type="submit" class="auth-submit">Sign In</button>
+                <p class="auth-switch">Don't have an account? <a href="#" data-switch="signup">Create one</a></p>
+            </form>
+
+            <!-- CREATE ACCOUNT -->
+            <form id="signUpForm" class="auth-form" novalidate>
+                <h2>Create your account</h2>
+                <p class="auth-sub">Join TheatreX to book movies, events &amp; plays</p>
+
+                <label for="signUpName">Full name</label>
+                <input type="text" id="signUpName" placeholder="Your name" autocomplete="name">
+                <span class="error-msg" id="signUpNameError"></span>
+
+                <label for="signUpEmail">Email</label>
+                <input type="email" id="signUpEmail" placeholder="you@example.com" autocomplete="email">
+                <span class="error-msg" id="signUpEmailError"></span>
+
+                <label for="signUpPassword">Password</label>
+                <input type="password" id="signUpPassword" placeholder="At least 6 characters" autocomplete="new-password">
+                <span class="error-msg" id="signUpPasswordError"></span>
+
+                <label for="signUpConfirm">Confirm password</label>
+                <input type="password" id="signUpConfirm" placeholder="Re-enter your password" autocomplete="new-password">
+                <span class="error-msg" id="signUpConfirmError"></span>
+
+                <p class="form-error" id="signUpFormError"></p>
+
+                <button type="submit" class="auth-submit">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" data-switch="signin">Sign in</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
