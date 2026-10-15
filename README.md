@@ -112,7 +112,7 @@ The login page provides the user interface for account access within the Theatre
 
 The movies page displays the available movie listings, allowing users to explore titles and proceed to the corresponding movie details page.
 
-![TheatreX Movies Page](screenshots/movies.png)
+![TheatreX Movies Page](images/movies.png)
 
 ### 4. Plays Page
 
@@ -142,17 +142,20 @@ This screen shows the initial stage of the selected movie's booking process.
 
 ![Movie Booking Interface](images/booking-step-1.png)
 
-#### 7.2. Seat Selection
+#### 7.2. Booking Details
+
+This screen shows the subsequent booking stage, allowing users to choose the location,theatre,screen etc.
+
+![Movie Booking Review](images/booking-step-3.png)
+
+#### 7.3. Seat Selection
 
 This screen demonstrates the seating selection interface, where users can view the available seating arrangement and make their selections.
 
 ![Movie Seat Selection](images/booking-step-2.png)
 
-#### 7.3. Booking Review
 
-This screen shows the subsequent booking stage, allowing users to review the information presented before proceeding.
 
-![Movie Booking Review](images/booking-step-3.png)
 
 ### 8. Bill and Print Page
 
