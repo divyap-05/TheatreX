@@ -252,17 +252,6 @@ The exact options available depend on the catalogue data and booking interface i
 - Booking availability is based on locally stored demo bookings. Without a server and shared database, it cannot guarantee seat availability across different devices or browser profiles.
 - Catalogue content and prices are sample/demo data defined in the JavaScript files and should be checked before any real-world use.
 
-## Repository Setup
-
-To clone the repository:
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
-```
-
-Then open the project folder containing `home.html` in a browser or Visual Studio Code.
-
 ## Future Improvements
 
 Possible extensions include a backend API and database, secure server-side authentication, shared seat inventory, real payment-gateway integration, stronger input validation, automated tests and deployment to a hosting platform.
