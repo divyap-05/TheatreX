@@ -10,7 +10,7 @@ TheatreX is a front-end web mini-project for browsing movies, live events and th
 
 ## My contributions :
 
-- **UI/UX Design**: Made key design decisions across the website, including page layouts, color palettes, icon colors, visual consistency, and overall styling.
+-  **UI/UX Design** : Made key design decisions across the website, including page layouts, color palettes, icon colors, visual consistency, and overall styling.
   
 - **Logo Design**: Contributed to the logo creation and final design decisions.
   
@@ -273,6 +273,3 @@ The exact options available depend on the catalogue data and booking interface i
 
 Possible extensions include a backend API and database, secure server-side authentication, shared seat inventory, real payment-gateway integration, stronger input validation, automated tests and deployment to a hosting platform.
 
-## Academic Use and Acknowledgement
-
-TheatreX was developed as a group mini-project. This repository is maintained by me.
