@@ -4,9 +4,8 @@
 
 TheatreX is a front-end web mini-project for browsing movies, live events and theatre plays, viewing item details, creating an account or signing in, and completing a simulated ticket-booking flow. The interface is built with HTML, CSS and vanilla JavaScript.
 
-**Project type:** Group mini-project  
-
-
+## Acknowledgement
+Group mini-project
 
 ## My contributions :
 
