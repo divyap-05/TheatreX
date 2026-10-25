@@ -7,7 +7,7 @@ TheatreX is a front-end web mini-project for browsing movies, live events and th
 ## Acknowledgement
 Group mini-project
 
-## My contributions :
+## My contributions 
 
 -  **UI/UX Design** : Made key design decisions across the website, including page layouts, color palettes, icon colors, visual consistency, and overall styling.
   
