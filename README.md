@@ -5,7 +5,20 @@
 TheatreX is a front-end web mini-project for browsing movies, live events and theatre plays, viewing item details, creating an account or signing in, and completing a simulated ticket-booking flow. The interface is built with HTML, CSS and vanilla JavaScript.
 
 **Project type:** Group mini-project  
-**My contribution:** I was responsible for the majority of the implementation and integration, with contributions from my teammates.
+## My contribution:
+
+TheatreX was developed as a group mini-project, with me taking the lead on UI/UX design decisions and several core frontend features.
+
+## My contributions included:
+
+- UI/UX Design: Made key design decisions across the website, including page layouts, color palettes, icon colors, visual consistency, and overall styling.
+- Logo Design: Contributed to the logo creation and final design decisions.
+- Homepage Development: Designed and developed the homepage, including its layout, content presentation, and interactive elements.
+- Movie Discovery: Implemented movie filtering and search functionality to help users find movies easily.
+- Booking System: Designed and implemented the booking flow, including the logic for selecting locations, theatres, dates, screens, and seats.
+- Reusable Data Structures: Established the initial data structures and object-based approach used to represent and display movies, events, and locations across the website.
+
+Beyond implementation, I took the initiative in planning the UI and defining the underlying logic for key features before applying those decisions consistently throughout the project.
 
 ## Features
 
